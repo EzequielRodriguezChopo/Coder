@@ -4,49 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Bootstrap</title>
+    <!--Estilos CSS de Bootstrap Local-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../estilos.css">
-    <title>Panaderia Los Abuelos</title>
 </head>
 <body>
     <header>
-        <div class="textoAnimado">
-            <img src="../imagenes/Icono.jpg" alt="Icono pantalla principal de Los Abuelos" class="icono">
+    <div class="px-3 py-2 fondoHeader">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <div class="textoAnimado">
+                <img src="../imagenes/Icono.jpg" alt="Icono pantalla principal de Los Abuelos" class="icono">
+            </div>
+            <div class="textheader">
+                Los Abuelos
+            </div>
+            <div>
+                <section class="iconosAnimados">
+                    <img src="../imagenes/Facebook.png" alt="Icono Facebook" class="redes">
+                    <img src="../imagenes/Instagram.png" alt="Icono Instagram" class="redes">
+                    <img src="../imagenes/Twitter.png" alt="Icono Twitter" class="redes">
+                </section>
+            </div>
+          </a>
         </div>
-        <div class="titulo textoAnimado"><h1>Panaderia Los Abuelos</h1></div>
-        <section class="iconosAnimados">
-            <img src="../imagenes/Facebook.png" alt="Icono Facebook" class="redesSociales">
-            <img src="../imagenes/Instagram.png" alt="Icono Instagram" class="redesSociales">
-            <img src="../imagenes/Twitter.png" alt="Icono Twitter" class="redesSociales">
-        </section>
+      </div>
+    </div>
     </header>
     <nav>
-            <span><a href="../index.html" class="textomenu">Inicio</a></span>
-            <span><a href="./productos.html" class="textomenu">Productos</a></span>
-            <span><a href="./nosotros.html" class="textomenu">Nosotros</a></span>
-            <span><a href="./login.html" class="textomenu">Login</a></span>
-            <span><a href="./contacto.html" class="textomenu">Contacto</a></span>
+    
+    <ul class="nav col-12  my-2 my-md-0 textsmall fondonav">
+        <li>
+            
+          <a href="../index.html" class="nav-link text-white degrade  margin">
+            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="./productos.html" class="nav-link text-white degrade  margin">
+            <svg class="bi mx-auto mb-1" width="24" height="24"><use href="./paginas/productos.html"/></svg>
+            Productos
+          </a>
+        </li>
+        <li>
+          <a href="./nosotros.html" class="nav-link textnav degrade  margin">
+            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
+            Nosotros
+          </a>
+        </li>
+        <li>
+          <a href="./login.html" class="nav-link  degrade margin">
+            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
+            Login
+          </a>
+        </li>
+        <li>
+          <a href="./contacto.html" class="nav-link text-white degrade margin ">
+            <svg class="bi mx-auto mb-1 " width="24" height="24"><use xlink:href="#people-circle"/></svg>
+            Contacto
+          </a>
+        </li>
+      </ul>
     </nav>
-    <aside></aside>
-    <main>
-        <div>
-            <h2 class="textoSecciones">Nosotros</h2>
-        </div>
-        <section >
-            <p class="estiloParrafo" >
-                Somos una empresa innovadora dedicada al asesoramiento y la comercialización de productos y materias primas de alta calidad,
-                capaces de satisfacer las necesidades mas exigentes de los profesionales de los sectores  pastelería, panadería ,
-                catering y alta gastronomía, así como también aquellos amantes de la cocina creativa y de tendencias.
-            </p>
-            <br>
-            <img src="../Imagenes/Nosotros.jpg" alt="Nuestra empresa" class="imgNosotros">
+    <main >  
+      <div class="  my-5 text-center">
+        <h1 class="display-4 textContacto ">Nosotros</h1>
+        <div class="col-lg-6 mx-auto">
+
+          <section class="contactoImage ">
+            <img src="../Imagenes/Contacto.jpg" width="500" alt=""><br><br>
+            <div class="estilContacto">
+                <h3>Telefono : 1155115511</h3>
+                <h3>Correo : losabuelos@gmail.com</h3>
+                <h3>Dirección : Triunvirato 2093</h3>
+            </div><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6556.8793519555475!2d-58.27962182675029!3d-34.74451564058791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b1d230df4ebf088!2sLos%20abuelos!5e0!3m2!1ses!2sar!4v1647217737412!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
         </section>
+        </div>
+      </div>
     </main>
-    <footer class="textoMenu">
-        <div><img src="./imagenes/medialunas.png" alt="Icono de medialuna" class="iconoMedialunas iconosAnimados"></div>
-        
-           <h3> Panaderia los Abuelos - &copy; 2022 - Desarrollado por Rodriguez Ezequiel</h3>
-        
-        <div><img src="./imagenes/medialunas.png" alt="Icono de medialuna" class="iconoMedialunas iconosAnimadosFooter"></div>
+
+<footer class=" textfooter">
+    
+<div class="container ">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
+      <div class=" d-flex align-items-center ">
+        <a href="/" class="mb-3 mb-md-0 text-muted text-decoration-none  ">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <div >Panaderia los Abuelos - &copy; 2022 - Desarrollado por Rodriguez Ezequiel</div>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <img src="../imagenes/Facebook.png" alt="Icono Facebook" class="redesFooter">
+        <img src="../imagenes/Instagram.png" alt="Icono Instagram" class="redesFooter">
+        <img src="../imagenes/Twitter.png" alt="Icono Twitter" class="redesFooter"> </ul>
     </footer>
+  </div>
+</footer>
+
+
+
+    <!--Javascript de Boostrap-->
+    <script src="../js/bootstrap.js"></script> 
 </body>
 </html>
