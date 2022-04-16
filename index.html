@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafio Bootstrap</title>
     <!--Estilos CSS de Bootstrap Local-->
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./estilos.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./estilos.css" />
+  </head>
+  <body>
+    <!--Empieza el Header-->
     <header>
-    <div class="px-3 py-2 fondoHeader">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+      <div class="px-5 py-2 fondoHeader">
+        <div class="container alineacionHeader">
             <div class="textoAnimado">
-                <img src="./imagenes/Icono.jpg" alt="Icono pantalla principal de Los Abuelos" class="icono">
+              <img src="./imagenes/Icono.jpg" alt="Icono pantalla principal de Los Abuelos" class="icono"/>
             </div>
             <div class="textheader">
-                Los Abuelos
+              Los Abuelos
             </div>
-            <div>
-                <section class="iconosAnimados">
-                    <img src="./imagenes/Facebook.png" alt="Icono Facebook" class="redes">
-                    <img src="./imagenes/Instagram.png" alt="Icono Instagram" class="redes">
-                    <img src="./imagenes/Twitter.png" alt="Icono Twitter" class="redes">
-                </section>
-            </div>
-          </a>
+            <section class="iconosAnimados">
+              <img src="./imagenes/Facebook.png" alt="Icono Facebook" class="redes"/>
+              <img src="./imagenes/Instagram.png" alt="Icono Instagram" class="redes"/>
+              <img src="./imagenes/Twitter.png" alt="Icono Twitter" class="redes"/>
+            </section>
         </div>
       </div>
-    </div>
     </header>
-    <nav>
-    
-    <ul class="nav col-12  my-2 my-md-0 textsmall fondonav">
+    <!--Termina el Header-->
+
+    <!--Comienzo Barra Nav-->
+    <nav class="fondonav">
+      <ul class="nav col-12 my-2 my-md-0 textsmall fondonav">
         <li>
-            
-          <a href="./index.html" class="nav-link textnav degrade  margin">
-            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
+          <a href="./index.html" class="nav-link textnav degrade margin">
+            <svg class="bi mx-auto mb-1" width="24" height="24">
+              <use xlink:href="#home" />
+            </svg>
             Inicio
           </a>
         </li>
         <li>
-          <a href="./paginas/productos.html" class="nav-link text-white degrade  margin">
-            <svg class="bi mx-auto mb-1" width="24" height="24"><use href="./paginas/productos.html"/></svg>
+          <a href="./paginas/productos.html" class="nav-link text-white degrade margin">
+            <svg class="bi mx-auto mb-1" width="24" height="24">
+              <use href="./paginas/productos.html" />
+            </svg>
             Productos
           </a>
         </li>
         <li>
-          <a href="./paginas/nosotros.html" class="nav-link text-white degrade  margin">
-            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
+          <a href="./paginas/nosotros.html" class="nav-link text-white degrade margin">
+            <svg class="bi mx-auto mb-1" width="24" height="24">
+              <use xlink:href="#table" />
+            </svg>
             Nosotros
           </a>
         </li>
         <li>
           <a href="./paginas/login.html" class="nav-link text-white degrade margin">
-            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
+            <svg class="bi mx-auto mb-1" width="24" height="24">
+              <use xlink:href="#grid" />
+            </svg>
             Login
           </a>
         </li>
         <li>
-          <a href="./paginas/contacto.html" class="nav-link text-white degrade margin ">
-            <svg class="bi mx-auto mb-1 " width="24" height="24"><use xlink:href="#people-circle"/></svg>
+          <a href="./paginas/contacto.html" class="nav-link text-white degrade margin">
+            <svg class="bi mx-auto mb-1" width="24" height="24">
+              <use xlink:href="#people-circle" />
+            </svg>
             Contacto
           </a>
         </li>
       </ul>
     </nav>
-    <main >
-        <img src="./imagenes/Home.jpg" alt="Imagen del Home" class="imgenIndex" >
+<!--Fin Barra Nav-->
+
+<!--Imagen Pagina Principal-->
+    <main>
+      <img src="./imagenes/Home.jpg" alt="Imagen del Home" class="imgenIndex" />
     </main>
 
-<footer class=" textfooter">
-    
-<div class="container ">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
-      <div class=" d-flex align-items-center ">
-        <a href="/" class="mb-3 mb-md-0 text-muted text-decoration-none  ">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-        </a>
-        <div >Panaderia los Abuelos - &copy; 2022 - Desarrollado por Rodriguez Ezequiel</div>
+<!--Comienzo Footer-->
+    <footer class="textfooter">
+      <div class="container">
+        <footer class=" py-3 my-4 elFooter">
+          <div class="pie">
+              Panaderia los Abuelos - &copy; 2022 - Desarrollado por Rodriguez Ezequiel
+          </div>
+          <ul class="posicionIconos">
+            <img src="./imagenes/Facebook.png" alt="Icono Facebook" class="redesFooter"/>
+            <img src="./imagenes/Instagram.png" alt="Icono Instagram" class="redesFooter"/>
+            <img src="./imagenes/Twitter.png" alt="Icono Twitter" class="redesFooter"/>
+          </ul>
+        </footer>
       </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <img src="./imagenes/Facebook.png" alt="Icono Facebook" class="redesFooter">
-        <img src="./imagenes/Instagram.png" alt="Icono Instagram" class="redesFooter">
-        <img src="./imagenes/Twitter.png" alt="Icono Twitter" class="redesFooter"> </ul>
     </footer>
-  </div>
-</footer>
-
+<!--Fin Footer-->
 
 
     <!--Javascript de Boostrap-->
-    <script src="./js/bootstrap.js"></script> 
-</body>
+    <script src="./js/bootstrap.js"></script>
+  </body>
 </html>

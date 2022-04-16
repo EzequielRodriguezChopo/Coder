@@ -10,74 +10,81 @@
     <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
-    <header>
-    <div class="px-3 py-2 fondoHeader">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-            <div class="textoAnimado">
-                <img src="../imagenes/Icono.jpg" alt="Icono pantalla principal de Los Abuelos" class="icono">
-            </div>
-            <div class="textheader">
-                Los Abuelos
-            </div>
-            <div>
-                <section class="iconosAnimados">
-                    <img src="../imagenes/Facebook.png" alt="Icono Facebook" class="redes">
-                    <img src="../imagenes/Instagram.png" alt="Icono Instagram" class="redes">
-                    <img src="../imagenes/Twitter.png" alt="Icono Twitter" class="redes">
-                </section>
-            </div>
-          </a>
-        </div>
+  <!--Empieza el Header-->
+  <header>
+    <div class="px-5 py-2 fondoHeader">
+      <div class="container alineacionHeader">
+          <div class="textoAnimado">
+            <img src="../imagenes/Icono.jpg" alt="Icono pantalla principal de Los Abuelos" class="icono"/>
+          </div>
+          <div class="textheader">
+            Los Abuelos
+          </div>
+          <section class="iconosAnimados">
+            <img src="../imagenes/Facebook.png" alt="Icono Facebook" class="redes"/>
+            <img src="../imagenes/Instagram.png" alt="Icono Instagram" class="redes"/>
+            <img src="../imagenes/Twitter.png" alt="Icono Twitter" class="redes"/>
+          </section>
       </div>
     </div>
-    </header>
-    <nav>
-    
-    <ul class="nav col-12  my-2 my-md-0 textsmall fondonav">
-        <li>
-            
-          <a href="../index.html" class="nav-link text-white degrade  margin">
-            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
-            Inicio
-          </a>
-        </li>
-        <li>
-          <a href="./productos.html" class="nav-link text-white degrade  margin">
-            <svg class="bi mx-auto mb-1" width="24" height="24"><use href="./paginas/productos.html"/></svg>
-            Productos
-          </a>
-        </li>
-        <li>
-          <a href="./nosotros.html" class="nav-link text-white degrade  margin">
-            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
-            Nosotros
-          </a>
-        </li>
-        <li>
-          <a href="./login.html" class="nav-link textnav degrade margin">
-            <svg class="bi mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
-            Login
-          </a>
-        </li>
-        <li>
-          <a href="./contacto.html" class="nav-link text-white degrade margin ">
-            <svg class="bi mx-auto mb-1 " width="24" height="24"><use xlink:href="#people-circle"/></svg>
-            Contacto
-          </a>
-        </li>
-      </ul>
-    </nav>
+  </header>
+  <!--Termina el Header-->
+
+  <!--Comienzo Barra Nav-->
+  <nav class="fondonav">
+    <ul class="nav col-12 my-2 my-md-0 textsmall fondonav">
+      <li>
+        <a href="../index.html" class="nav-link text-white degrade margin">
+          <svg class="bi mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#home" />
+          </svg>
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a href="./productos.html" class="nav-link text-white degrade margin">
+          <svg class="bi mx-auto mb-1" width="24" height="24">
+            <use href="./productos.html" />
+          </svg>
+          Productos
+        </a>
+      </li>
+      <li>
+        <a href="./nosotros.html" class="nav-link text-white degrade margin">
+          <svg class="bi mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#table" />
+          </svg>
+          Nosotros
+        </a>
+      </li>
+      <li>
+        <a href="./login.html" class="nav-link textnav degrade margin">
+          <svg class="bi mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#grid" />
+          </svg>
+          Login
+        </a>
+      </li>
+      <li>
+        <a href="./contacto.html" class="nav-link text-white degrade margin">
+          <svg class="bi mx-auto mb-1" width="24" height="24">
+            <use xlink:href="#people-circle" />
+          </svg>
+          Contacto
+        </a>
+      </li>
+    </ul>
+  </nav>
+<!--Fin Barra Nav-->
     <main >  
       <div class="  my-5 text-center">
         <h1 class="display-4 textContacto ">Login</h1>
-        <div>
+      </div>
 
-          <div class="col-md-7 col-lg-12 test">
-            <form class="needs-validation" novalidate>
-              <div class="g-3 mx">
-                <div class="col-sm-12">
+          <div class="text-center">
+            <form class="needs-validation test" novalidate>
+              <div>
+                <div class="anchoFormulario">
                   <label for="firstName" class="form-label espaciosLogin">Nombre</label>
                   <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                   <div class="invalid-feedback">
@@ -85,7 +92,7 @@
                   </div>
                 </div>
     
-                <div class="col-sm-12">
+                <div class="anchoFormulario">
                   <label for="lastName" class="form-label espaciosLogin">Apellido</label>
                   <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                   <div class="invalid-feedback">
@@ -93,7 +100,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-12">
+                <div class="anchoFormulario">
                   <label for="lastName" class="form-label espaciosLogin">Edad</label>
                   <input type="number" class="form-control" id="lastName" placeholder="" value="" required>
                   <div class="invalid-feedback">
@@ -101,7 +108,7 @@
                   </div>
                 </div>
     
-                <div class="col-12">
+                <div class="anchoFormulario">
                   <label for="email" class="form-label espaciosLogin">Email</label>
                   <input type="email" class="form-control" id="email" placeholder="you@example.com">
                   <div class="invalid-feedback">
@@ -110,7 +117,7 @@
                 </div>
     
 
-                <div class="col-md-12">
+                <div class="anchoFormulario">
                   <label for="country" class="form-label espaciosLogin">Estado Civil</label>
                   <select class="form-select" id="country" required>
                     <option value="">Estado Civil</option>
@@ -127,7 +134,7 @@
                 <input type="checkbox" name="Acepta" value="1"><br><br>
             </div>
 
-            <textarea name="Comentarios" placeholder="Comentarios" cols="40" rows="10"></textarea><br>
+            <textarea name="Comentarios" placeholder="Comentarios" cols="40" rows="10" class="anchoFormulario"></textarea><br>
 
             <input class="botones" type="reset" value="Limpiar Formulario">
             <input class="botones" type="submit" value="Enviar Formulario">
@@ -141,25 +148,22 @@
       </div>
     </main>
 
-<footer class=" textfooter">
-    
-<div class="container ">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 ">
-      <div class=" d-flex align-items-center ">
-        <a href="/" class="mb-3 mb-md-0 text-muted text-decoration-none  ">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-        </a>
-        <div >Panaderia los Abuelos - &copy; 2022 - Desarrollado por Rodriguez Ezequiel</div>
+<!--Comienzo Footer-->
+<footer class="textfooter">
+  <div class="container">
+    <footer class=" py-3 my-4 elFooter">
+      <div class="pie">
+          Panaderia los Abuelos - &copy; 2022 - Desarrollado por Rodriguez Ezequiel
       </div>
-  
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <img src="../imagenes/Facebook.png" alt="Icono Facebook" class="redesFooter">
-        <img src="../imagenes/Instagram.png" alt="Icono Instagram" class="redesFooter">
-        <img src="../imagenes/Twitter.png" alt="Icono Twitter" class="redesFooter"> </ul>
+      <ul class="posicionIconos">
+        <img src="../imagenes/Facebook.png" alt="Icono Facebook" class="redesFooter"/>
+        <img src="../imagenes/Instagram.png" alt="Icono Instagram" class="redesFooter"/>
+        <img src="../imagenes/Twitter.png" alt="Icono Twitter" class="redesFooter"/>
+      </ul>
     </footer>
   </div>
 </footer>
-
+<!--Fin Footer-->
 
 
     <!--Javascript de Boostrap-->
