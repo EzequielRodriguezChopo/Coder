@@ -1,0 +1,90 @@
+@import "colors";
+body {
+  background-color: $color3;
+}
+.border {
+  border: 105px;
+  border-color: $color9;
+}
+.imgenIndex {
+  display: grid;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 10px;
+}
+.textContacto {
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin-bottom: 70px;
+  background-image: radial-gradient($color1 42%, $color2 80%);
+  border: solid 2px $color4;
+  border-radius: 5px;
+  color: $color10;
+}
+.estilContacto {
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: radial-gradient($color1 42%, $color2 80%);
+  border: solid 2px $color4;
+  border-radius: 5px;
+  color: $color10;
+}
+.mx {
+  width: 30vw;
+  font-size: 20px;
+}
+.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 5px;
+  border: solid 2px $color9;
+  line-height: 40px;
+  background-image: radial-gradient($color1 42%, $color2 80%);
+  border-radius: 5px;
+}
+.botones {
+  background-image: radial-gradient($color1 42%, $color2 80%);
+}
+.espaciosLogin {
+  margin: 10px;
+}
+.anchoFormulario {
+  width: 100%;
+}
+.articulo {
+  width: 100px;
+  margin: 10px;
+}
+.productos {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.producto {
+  background-image: linear-gradient(270deg, $color6 40%, $color7 80%);
+  border-radius: 4px;
+  margin: 5px;
+  padding: 7px;
+  text-align: center;
+}
+.imgNosotros {
+  width: 100vw;
+  border-radius: 100px;
+}
+.estiloParrafo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 10px;
+  padding: 30px;
+  border: solid 2px $color9;
+  border-radius: 10px;
+  line-height: 40px;
+  background-image: linear-gradient(270deg, $color2 40%, $color1 80%);
+}

@@ -1,0 +1,35 @@
+
+  @media (max-width: 1024px) {
+    .alineacionHeader {
+      flex-direction: column;
+    }
+    .textheader {
+      white-space: nowrap;
+      font-size: 80px;
+      margin-left: 0vw;
+    }
+    .iconosAnimados {
+      margin-left: 0vw;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .pie {
+      font-size: 17px;
+    }
+    .elFooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+    .test {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1%;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding: 0px;
+    }
+    .imgNosotros {
+      border-radius: 50px;
+    }
+  }
