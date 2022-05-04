@@ -1,4 +1,9 @@
 @import "colors";
+
+@mixin porcentajes ($primero,$segundo){
+  background-image: radial-gradient($color1 $primero, $color2 $segundo);
+}
+
 body {
   background-color: $color3;
 }
@@ -13,13 +18,15 @@ body {
   margin-top: 10px;
 }
 .textContacto {
+  @include porcentajes(42%,80%);
   font-family: "Arial Narrow Bold", sans-serif;
   margin-bottom: 70px;
-  background-image: radial-gradient($color1 42%, $color2 80%);
+  /*background-image: radial-gradient($color1 42%, $color2 80%);*/ //USO MIXIN
   border: solid 2px $color4;
   border-radius: 5px;
   color: $color10;
 }
+/*
 .estilContacto {
   padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,11 +35,18 @@ body {
   border-radius: 5px;
   color: $color10;
 }
+*/
+.estilContacto {
+  @extend .textContacto;      //USO EXTENDS
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
 .mx {
   width: 30vw;
   font-size: 20px;
 }
 .test {
+  @include porcentajes(42%,80%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,11 +60,12 @@ body {
   padding: 5px;
   border: solid 2px $color9;
   line-height: 40px;
-  background-image: radial-gradient($color1 42%, $color2 80%);
+  /*background-image: radial-gradient($color1 42%, $color2 80%);*/ //USO MIXIN
   border-radius: 5px;
 }
 .botones {
-  background-image: radial-gradient($color1 42%, $color2 80%);
+  @include porcentajes(42%,80%);
+  /*background-image: radial-gradient($color1 42%, $color2 80%);*/ //USO MIXIN
 }
 .espaciosLogin {
   margin: 10px;
