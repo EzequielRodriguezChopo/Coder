@@ -244,20 +244,25 @@ body {
 
 /*Estilos del Footer*/
 .textfooter {
-  font-size: 20vw;
   color: rgb(85, 43, 4);
   background-image: linear-gradient(rgb(207, 106, 10) 30%, rgb(243, 142, 47) 80%);
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 .elFooter {
+  font-size: 100px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: end;
 }
 
 .pie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
+  padding: 10px;
 }
 
 .posicionIconos {
@@ -299,15 +304,13 @@ body {
 
   .elFooter {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    flex-direction: column;
   }
 
   .test {
     display: flex;
     flex-direction: row;
     margin-top: 1%;
-    margin-left: 20%;
     margin-right: 20%;
     padding: 0px;
   }
@@ -331,7 +334,7 @@ body {
   }
 
   .pie {
-    font-size: 13px;
+    font-size: 1700px;
   }
 
   .posicionIconos {

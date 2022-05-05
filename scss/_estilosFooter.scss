@@ -1,18 +1,25 @@
 @import "colors";
 .textfooter {
-  font-size: 20vw;
+
   color: $color8;
   background-image: linear-gradient($color2 30%, $color5 80%);
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 .elFooter {
+  font-size: 100px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: end;
 }
 .pie {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
-}
+  padding: 10px;
+} 
 .posicionIconos {
   display: flex;
   flex-wrap: nowrap;
