@@ -3,6 +3,7 @@
 header {
   border: solid 2px rgb(117, 58, 2);
   border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .fondoHeader {
@@ -108,6 +109,36 @@ nav {
   padding-right: 45px;
 }
 
+.boton1 {
+  color: rgb(243, 142, 47);
+}
+
+.boton2 {
+  color: rgb(207, 106, 10);
+}
+
+.boton3 {
+  color: rgb(238, 187, 111);
+}
+
+.boton4 {
+  color: rgb(117, 58, 2);
+}
+
+.boton5 {
+  color: rgb(243, 142, 47);
+}
+
+.colorBoton {
+  color: white;
+}
+
+.colorBoton:hover {
+  background-image: radial-gradient(rgb(117, 58, 2) 20%, rgb(207, 106, 10) 70%);
+  border: 10px;
+  color: white;
+}
+
 /*Estilos del Main*/
 body {
   background-color: rgb(238, 187, 111);
@@ -125,22 +156,19 @@ body {
   margin-top: 10px;
 }
 
-.textContacto {
-  font-family: "Arial Narrow Bold", sans-serif;
-  margin-bottom: 70px;
+.textContacto, .estilContacto {
   background-image: radial-gradient(rgb(243, 142, 47) 42%, rgb(207, 106, 10) 80%);
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 70px;
   border: solid 2px rgb(117, 58, 2);
   border-radius: 5px;
   color: rgb(56, 28, 2);
 }
 
 .estilContacto {
-  padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: radial-gradient(rgb(243, 142, 47) 42%, rgb(207, 106, 10) 80%);
-  border: solid 2px rgb(117, 58, 2);
-  border-radius: 5px;
-  color: rgb(56, 28, 2);
+  margin-top: 35px;
+  padding: 30px;
 }
 
 .mx {
@@ -149,6 +177,7 @@ body {
 }
 
 .test {
+  background-image: radial-gradient(rgb(243, 142, 47) 42%, rgb(207, 106, 10) 80%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -162,7 +191,6 @@ body {
   padding: 5px;
   border: solid 2px rgb(0, 0, 0);
   line-height: 40px;
-  background-image: radial-gradient(rgb(243, 142, 47) 42%, rgb(207, 106, 10) 80%);
   border-radius: 5px;
 }
 
@@ -179,8 +207,16 @@ body {
 }
 
 .articulo {
-  width: 100px;
+  width: 20vw;
+  height: 140px;
   margin: 10px;
+}
+
+.articulo:hover {
+  width: 22vw;
+  height: 180px;
+  margin: 0px;
+  padding-top: 10px;
 }
 
 .productos {
@@ -213,22 +249,68 @@ body {
   background-image: linear-gradient(270deg, rgb(207, 106, 10) 40%, rgb(243, 142, 47) 80%);
 }
 
+.estilContacto {
+  border-radius: 20px;
+}
+
+.botonCarrito {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  background-image: radial-gradient(rgb(243, 142, 47) 20%, rgb(207, 106, 10) 70%);
+  border: 10px;
+  border-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding-right: 45px;
+  color: rgb(85, 43, 4);
+}
+
+.carrito {
+  padding-top: 15px;
+}
+
+.carrito-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: rgb(85, 43, 4);
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carrito-link {
+    transition: none;
+  }
+}
+.botonCarrito:hover {
+  border: 1px solid rgb(117, 58, 2);
+  color: rgb(0, 0, 0);
+}
+
+.bordeProducto {
+  border: 2px solid rgb(117, 58, 2);
+}
+
 /*Estilos del Footer*/
 .textfooter {
-  font-size: 20px;
   color: rgb(85, 43, 4);
   background-image: linear-gradient(rgb(207, 106, 10) 30%, rgb(243, 142, 47) 80%);
-  white-space: nowrap;
+  /*white-space: nowrap;*/
 }
 
 .elFooter {
+  font-size: 100px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: end;
 }
 
 .pie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
+  padding: 10px;
 }
 
 .posicionIconos {
@@ -237,6 +319,7 @@ body {
   padding-left: 10vw;
   margin-bottom: 0;
   list-style: none;
+  padding-top: 8px;
   justify-content: end;
 }
 
@@ -244,6 +327,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 10px;
+  padding: 1px;
 }
 
 /*Estilos tamaño Tablet*/
@@ -265,26 +349,44 @@ body {
   }
 
   .pie {
-    font-size: 17px;
+    font-size: 20px;
+    justify-content: center;
   }
 
   .elFooter {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    flex-direction: column;
   }
 
   .test {
     display: flex;
     flex-direction: row;
     margin-top: 1%;
-    margin-left: 20%;
     margin-right: 20%;
     padding: 0px;
   }
 
   .imgNosotros {
     border-radius: 50px;
+  }
+
+  .posicionIconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vw;
+  }
+
+  .articulo {
+    width: 17vw;
+    margin: 10px;
+  }
+
+  .articulo:hover {
+    width: 20vw;
+    height: 200px;
+    margin: 0px;
+    padding-top: 10px;
   }
 }
 /*Estilos tamaño SmartPhone*/
@@ -302,7 +404,8 @@ body {
   }
 
   .pie {
-    font-size: 13px;
+    font-size: 20px;
+    justify-content: center;
   }
 
   .posicionIconos {
@@ -328,6 +431,18 @@ body {
     margin-left: 0%;
     margin-right: 0%;
     padding: 0px;
+  }
+
+  .articulo {
+    width: 40vw;
+    margin: 10px;
+  }
+
+  .articulo:hover {
+    width: 44vw;
+    height: 180px;
+    margin: -10px;
+    padding-top: 20px;
   }
 }
 

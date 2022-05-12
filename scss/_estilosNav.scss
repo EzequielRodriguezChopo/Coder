@@ -41,3 +41,11 @@ $mapa:(
       color:$colores
     }
 }
+.colorBoton {
+color: white;
+}
+.colorBoton:hover{
+  background-image: radial-gradient($color4 20%, $color2 70%);
+  border: 10px;
+  color: white;
+}

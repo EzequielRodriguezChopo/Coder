@@ -11,7 +11,8 @@
       text-align: center;
     }
     .pie {
-      font-size: 1700px;
+      font-size: 20px;
+      justify-content: center;
     }
     .posicionIconos {
       display: flex;
@@ -34,4 +35,16 @@
       margin-right: 0%;
       padding: 0px;
     }
+
+  .articulo {
+    width: 40vw;
+    margin: 10px;
+  }
+  .articulo:hover{
+
+    width: 44vw;
+    height: 180px;
+    margin: -10px;
+    padding-top: 20px;
+  }
   }
